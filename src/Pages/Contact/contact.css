@@ -1,0 +1,46 @@
+.contact .box-container .image {
+  flex: 1 1 35rem;
+}
+
+.contact .box-container form {
+  flex: 1 1 50rem;
+}
+
+.contact .box-container form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .box-container form .inputBox input,
+.contact .box-container form textarea {
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: var(--white);
+  background: var(--gray);
+  text-transform: none;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+
+.contact .box-container form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+
+#light .contact .box-container form {
+  background-color: var(--white);
+}
+
+#dark .contact .box-container form {
+  background-color: #333;
+}
+
+@media (max-width: 450px) {
+  .contact .box-container form .inputBox input {
+    width: 100%;
+  }
+}

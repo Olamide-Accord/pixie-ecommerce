@@ -1,0 +1,44 @@
+.subscribe{
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 5% 0;
+  width: 100vw;
+  margin-top: 3rem;
+}
+.subscribe .content{
+  width: 60%;
+  margin: auto;
+}
+.subscribe .subscribe-header h2{
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+.subscribe .subscribe-header p{
+  font-size: 1.7rem;
+  margin: 1.5rem 0;
+}
+.subscribe form{
+  margin: 3rem 0;
+}
+.subscribe form input:-ms-input-placeholder{
+color: var(--white);
+}
+.subscribe form .sub-email{
+  background: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 1.3rem 2rem;
+  width: 45rem;
+  margin-right: 1.5rem;
+  border-radius: 0.5rem;
+}
+.subscribe .sub-btn{
+  background-color: var(--white);
+  color: var(--blue);
+  padding: 1.3rem 4rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,29 @@
+.hero{
+  position: relative;
+  background-image: url("../../assets/images/banner-bg.jpg");
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero .text-container{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  transform: translate(-5%, -40%);
+  width: 40rem;
+  height: max-content;
+  background-color: rgba(250, 250, 250, 0.9);
+  padding: 2rem;
+}
+.hero .text-container h2{
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+.hero .text-container p{
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}

@@ -1,0 +1,50 @@
+footer{
+  padding: 4% 0;
+}
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.footer-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+.footer-links a{
+  color: var(--black);
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.footer-links a:hover{
+  color: var(--blue);
+}
+
+.footer-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.icon-box{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--gray);
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.icon-box:hover{
+  background-color: var(--blue);
+}
+.icon-box .icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 1.3rem;
+}

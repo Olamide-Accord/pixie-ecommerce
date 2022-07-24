@@ -1,0 +1,22 @@
+.featured-items .featured-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featured-items .featured-header .featured-links{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.featured-header .featured-links li a{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.featured-items .box-container{
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.featured-items .box-container .box{
+  flex: 1 1 28rem;
+}
