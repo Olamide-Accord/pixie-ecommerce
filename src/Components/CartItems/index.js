@@ -19,7 +19,7 @@ const CartItems = () => {
                 <div className="cart-text">
                   <h4>{name}</h4>
                   <h5>${price.toFixed(2)}</h5>
-                  <button className="remove-btn" onClick={removeItem(id)}>
+                  <button className="remove-btn" onClick={() => removeItem(id)}>
                     remove
                   </button>
                 </div>

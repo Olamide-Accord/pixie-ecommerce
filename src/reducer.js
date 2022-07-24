@@ -4,10 +4,10 @@ const reducer = (state, action) => {
   }
 
   if(action.type === "REMOVE_ITEM") {
-    console.log(action.payload);
+    const newCart = state.cart.filter((item) => item.id !== action.payload);
     return {
       ...state, 
-      cart: state.cart.filter((item) => item.id !== action.payload)}
+      cart: newCart}
   }
 
   return state;
