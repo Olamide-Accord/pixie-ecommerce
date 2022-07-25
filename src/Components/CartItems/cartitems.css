@@ -49,6 +49,9 @@
   color: var(--blue);
   cursor: pointer;
 }
+.cart-items .quantity button{
+  background: transparent;
+}
 
 /* Total */
 .total{

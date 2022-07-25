@@ -127,28 +127,28 @@ export const cartData = [
     id: 1,
     img: item1,
     name: "proin vel ligula",
-    price: 15.0,
+    price: 15.99,
     amount: 1,
   },
   {
     id: 2,
     img: item2,
     name: "erat odio rhoncus",
-    price: 25.0,
+    price: 25.99,
     amount: 1,
   },
   {
     id: 3,
     img: item3,
     name: "integer vel ltupis",
-    price: 35.0,
+    price: 35.99,
     amount: 1,
   },
   {
     id: 4,
     img: item4,
     name: "sed purus quam",
-    price: 45.0,
+    price: 45.99,
     amount: 1,
   }
 ];

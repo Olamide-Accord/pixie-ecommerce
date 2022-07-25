@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useReducer } from "react";
+import React, { createContext, useContext, useState, useReducer, useEffect } from "react";
 import {cartData} from "./data"
 import reducer from "./reducer"
 
@@ -21,11 +21,20 @@ const AppProvider = ({children}) => {
     dispatch({type: "REMOVE_ITEM", payload: id})
   }
 
+  const toggleAmount = (id, type) => {
+    dispatch({type: "TOGGLE_AMOUNT", payload: {id, type}})
+  }
+
+
   const [navbar, setNavbar] = useState(false);
 
   const toggleNavbar = () => {
     setNavbar(!navbar);
   }
+
+  useEffect(() => {
+    dispatch({type: 'GET_TOTAL'})
+  }, [state.cart])
 
   return (
     <AppContext.Provider value={{
@@ -33,7 +42,8 @@ const AppProvider = ({children}) => {
       toggleNavbar,
       ...state,
       clearCart,
-      removeItem
+      removeItem, 
+      toggleAmount
     }}>
       {children}
     </AppContext.Provider>

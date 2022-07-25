@@ -4,7 +4,7 @@ import { FaCaretDown, FaCaretUp } from "react-icons/fa/index";
 import { useGlobalContext } from '../../context';
 
 const CartItems = () => {
-  const {cart, total, clearCart, removeItem} = useGlobalContext()
+  const {cart, total, clearCart, removeItem, toggleAmount} = useGlobalContext()
   return (
     <div className="cart-items">
       {cart.map((item) => {
@@ -25,9 +25,13 @@ const CartItems = () => {
                 </div>
               </div>
               <div className="quantity">
-                <FaCaretUp className="icon" />
+                <button onClick={() => toggleAmount(id, "inc")}>
+                  <FaCaretUp className="icon" />
+                </button>
                 <p>{amount}</p>
-                <FaCaretDown className="icon" />
+                <button onClick={() => toggleAmount(id, "dec")}>
+                  <FaCaretDown className="icon" />
+                </button>
               </div>
             </div>
             <div className="gray-line"></div>
