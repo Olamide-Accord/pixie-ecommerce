@@ -1,19 +1,79 @@
 import React from 'react';
-import "swiper/css";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from 'swiper';
 import "./featured.css"
 import { useGlobalContext } from '../../context';
 import { Link } from 'react-router-dom';
+import Slider from "react-slick";
+
+function SampleNextArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ background: "blue", color: "white" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ display: "block", background: "blue", color: "white" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Featured = () => {
-  const {cart, addCart} = useGlobalContext()
+  const {cart, addCart} = useGlobalContext();
+
+  let settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    swipe: true,
+    swipeToSlide: true,
+    accessibilty: true,
+    infinite: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="featured">
       <div className="line"></div>
       <h2>featured items</h2>
-      <div className='box-container'>
+      <Slider>
         {
           cart.map((item, index) => {
             const {id, small, name, price} = item;
@@ -32,7 +92,7 @@ const Featured = () => {
             
         })
         }
-      </div>
+      </Slider>
     </section>
   )
 }
