@@ -25,13 +25,22 @@ const reducer = (state, action) => {
     return {...state, cart: tempCart}
   }
 
+  if(action.type === "ADD_CART"){
+    let tempCart = state.featuredItems.map((cartItem) => {
+      if(cartItem.id === action.payload.id) {
+        return {...cartItem,}
+      }
+    })
+    console.log(tempCart);
+    return {...state, tempCart}
+  }
+
   if(action.type === 'GET_TOTAL') {
     let {total, amount} = state.cart.reduce((cartTotal, cartItem) => {
       const {price, amount} = cartItem;
       const itemTotal = price * amount;
       cartTotal.total += itemTotal;
       cartTotal.amount += amount;
-      console.log(price, amount);
       return cartTotal;
     }, {
       total: 0,

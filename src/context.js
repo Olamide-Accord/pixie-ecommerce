@@ -1,11 +1,11 @@
 import React, { createContext, useContext, useState, useReducer, useEffect } from "react";
-import {cartData} from "./data"
+import {data} from "./data"
 import reducer from "./reducer"
 
 const AppContext = createContext();
 
 const initialState = {
-  cart: cartData,
+  cart: data,
   total: 0,
   amount: 0
 }
@@ -25,6 +25,9 @@ const AppProvider = ({children}) => {
     dispatch({type: "TOGGLE_AMOUNT", payload: {id, type}})
   }
 
+  const addCart = (id) => {
+    dispatch({type: "ADD_CART", payload: id})
+  }
 
   const [navbar, setNavbar] = useState(false);
 
@@ -43,7 +46,8 @@ const AppProvider = ({children}) => {
       ...state,
       clearCart,
       removeItem, 
-      toggleAmount
+      toggleAmount,
+      addCart
     }}>
       {children}
     </AppContext.Provider>

@@ -1,8 +1,11 @@
 import React from 'react';
 import { items } from "../../data";
+import {Link} from "react-router-dom"
 import "./featured-items.css"
+import { useGlobalContext } from '../../context';
 
 const FeaturedItems = () => {
+  const {cart} = useGlobalContext()
   return (
     <div className="featured-items">
       <div className="featured-header">
@@ -25,13 +28,13 @@ const FeaturedItems = () => {
           </li>
         </div>
       </div>
-      <div className="box-container">
-        {items.map((item) => {
-          const { id, img, name, price } = item;
+      <div className='box-container'>
+        {cart.map((item) => {
+          const { id, small, name, price } = item;
           return (
             <div className="box" key={id}>
               <div className="image">
-                <img src={img} alt={name} />
+                <img src={small} alt={name} />
               </div>
               <div className="box-text">
                 <h5>{name}</h5>

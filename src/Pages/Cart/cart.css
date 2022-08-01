@@ -1,6 +1,6 @@
 section.cart{
   padding: 1rem 7% ;
-  margin: 7rem 0 1rem;
+  margin: 5rem 0 1rem;
 }
 .cart .box-container{
   gap: 6rem;
@@ -12,58 +12,10 @@ section.cart{
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-.cart .box-container .cart-column.payment-method{
-  flex: 1 1 28rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.cart .box-container .cart-column.phone-image{
+  flex: 1 1 25rem;
 }
-
-/* Payment div */
-.payment-method .payment{
-  color: white;
-  background-color: darkslategrey;
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
-.payment-method h4{
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.payment-method .inputBox input::placeholder{
-  color: var(--black);
-}
-.payment-method .formBox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 1rem 0;
-}
-.payment-method .inputBox{
-  display: flex;
-  flex-direction: column;
-}
-.payment-method .inputBox label{
-  font-size: 1.4rem;
-  margin-bottom: 0.75rem;
-}
-.payment-method .inputBox input{
+.cart .box-container .cart-column.phone-image img{
   width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1.5rem;
-  color: var(--darkColor);
-  background: #f7f7f7;
-  text-transform: none;
-  border-radius: 0.3rem;
 }
 
-/* Shipping Div */
-.payment-method .shipping{
-  color: white;
-  background-color: hsl(240, 100%, 65%);
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
-.payment-method .shipping .inputBox{
-  margin: 1rem 0;
-}

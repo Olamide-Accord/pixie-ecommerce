@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "swiper/css/bundle";
 import About from './Pages/About';
 import Account from "./Pages/Account"
 import Contact from "./Pages/Contact";
@@ -9,6 +10,7 @@ import Navbar from "./Components/Navbar"
 import Products from "./Pages/Products";
 import Subscribe from "./Components/Subscribe"
 import Cart from './Pages/Cart';
+import SingleProduct from './Pages/SingleProduct';
 
 const App = () => {
   return (
@@ -19,9 +21,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path='/about' element={<About/>}/>
           <Route path='/products' element={<Products/>}/>
+          <Route path='/:id' element={<SingleProduct/>}/>
           <Route path='/contact' element={<Contact/>} />
           <Route path='/account' element={<Account/>} />
           <Route path='/cart' element={<Cart/>}/>
+
         </Routes>
         <Subscribe/>
         <Footer />

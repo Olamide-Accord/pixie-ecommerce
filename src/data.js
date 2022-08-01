@@ -12,143 +12,79 @@ import product4 from "./assets/images/product-04.jpg";
 import product5 from "./assets/images/product-05.jpg";
 import product6 from "./assets/images/product-06.jpg";
 
-export const features = [
+export const data = [
   {
     id: 1,
-    img: item1,
+    small: item1,
+    large: product1,
     name: "proin vel ligula",
-    price: 15.00
+    price: 15.00,
+    amount: 1
   },
   {
     id: 2,
-    img: item2,
+    small: item2,
+    large: product2,
     name: "erat odio rhoncus",
-    price: 25.00
+    price: 25.29,
+    amount: 1
   },
   {
     id: 3,
-    img: item3,
+    small: item3,
+    large: product3,
     name: "integer vel ltupis",
-    price: 35.00
+    price: 35.00,
+    amount: 1
   },
   {
     id: 4,
-    img: item4,
+    small: item4,
+    large: product4,
     name: "sed purus quam",
-    price: 45.00
+    price: 45.59,
+    amount: 1
   },
   {
     id: 5,
-    img: item5,
+    small: item5,
+    large: product5,
     name: "mobi aliquet",
-    price: 55.00
+    price: 55.99,
+    amount: 1
   },
   {
     id: 6,
-    img: item6,
+    small: item6,
+    large: product6,
     name: "urna ac diam",
-    price: 65.00
+    price: 65.49,
+    amount: 1
   },
   {
     id: 7,
-    img: item1,
-    name: "proin vel ligula",
-    price: 15.00
+    small: item1,
+    large: product1,
+    name: "mobi aliquet",
+    price: 75.99,
+    amount: 1
   },
   {
     id: 8,
-    img: item1,
+    small: item2,
+    large: product2,
     name: "proin vel ligula",
-    price: 15.00
+    price: 85.89,
+    amount: 1
+  },
+  {
+    id: 9,
+    small: item3,
+    large: product3,
+    name: "proin vel ligula",
+    price: 95.89,
+    amount: 1
   },
 ]
 
 
-export const items = [
-  {
-    id: 1,
-    img: product1,
-    name: "proin vel ligula",
-    price: 15.0,
-  },
-  {
-    id: 2,
-    img: product2,
-    name: "erat odio rhoncus",
-    price: 25.0,
-  },
-  {
-    id: 3,
-    img: product3,
-    name: "integer vel ltupis",
-    price: 35.0,
-  },
-  {
-    id: 4,
-    img: product4,
-    name: "sed purus quam",
-    price: 45.0,
-  },
-  {
-    id: 5,
-    img: product5,
-    name: "mobi aliquet",
-    price: 55.0,
-  },
-  {
-    id: 6,
-    img: product6,
-    name: "urna ac diam",
-    price: 65.0,
-  },
-  {
-    id: 7,
-    img: product3,
-    name: "proin vel ligula",
-    price: 75.0,
-  },
-  {
-    id: 8,
-    img: product2,
-    name: "proin vel ligula",
-    price: 85.0,
-  },
-  {
-    id: 9,
-    img: product1,
-    name: "proin vel ligula",
-    price: 95.0,
-  }
-];
-
-
-export const cartData = [
-  {
-    id: 1,
-    img: item1,
-    name: "proin vel ligula",
-    price: 15.99,
-    amount: 1,
-  },
-  {
-    id: 2,
-    img: item2,
-    name: "erat odio rhoncus",
-    price: 25.99,
-    amount: 1,
-  },
-  {
-    id: 3,
-    img: item3,
-    name: "integer vel ltupis",
-    price: 35.99,
-    amount: 1,
-  },
-  {
-    id: 4,
-    img: item4,
-    name: "sed purus quam",
-    price: 45.99,
-    amount: 1,
-  }
-];

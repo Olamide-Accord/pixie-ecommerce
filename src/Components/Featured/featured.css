@@ -1,7 +1,20 @@
 section.featured{
   margin-top: 4rem;
 }
+
 .featured h2{
   font-size: 2.3rem;
   font-weight: 600;
+}
+.add-btn{
+  display: block;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.75rem 1.3rem;
+  margin: 1rem 0 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  width: 13rem;
+  letter-spacing: 0.2rem;
 }

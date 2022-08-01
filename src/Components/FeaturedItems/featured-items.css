@@ -8,6 +8,7 @@
   align-items: center;
   gap: 2rem;
 }
+
 .featured-header .featured-links li a{
   font-size: 1.5rem;
   font-weight: bold;
@@ -19,4 +20,7 @@
 }
 .featured-items .box-container .box{
   flex: 1 1 28rem;
+}
+.featured-items .box-container .box:hover{
+  cursor: pointer;
 }

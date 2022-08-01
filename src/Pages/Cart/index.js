@@ -1,9 +1,11 @@
 import React from 'react';
 import CartItems from '../../Components/CartItems';
+import phone from "../../assets/images/phone.svg"
 import "./cart.css"
+import { useGlobalContext } from '../../context';
 
 const Cart = () => {
- 
+  const {cart} = useGlobalContext()
   return (
     <section className="cart">
       <div className="box-container">
@@ -13,53 +15,9 @@ const Cart = () => {
             <CartItems/>
           </div>
         </div>
-
-        <div className="cart-column payment-method">
-          <div className="payment">
-            <h4>payment</h4>
-            <form>
-              <div className="formBox">
-                <div className="inputBox">
-                  <label htmlFor="cardNum">card number</label>
-                  <input type="number" id="cardNum" placeholder="name" />
-                </div>
-                <div className="inputBox">
-                  <label htmlFor="valid">valid until</label>
-                  <input type="month" id="valid" />
-                </div>
-                <div className="inputBox">
-                  <label htmlFor="">name on the card</label>
-                  <input type="text" placeholder="tony stark" />
-                </div>
-                <div className="inputBox">
-                  <label htmlFor="">name on the card</label>
-                  <input type="text" placeholder="tony stark" />
-                </div>
-              </div>
-            </form>
-          </div>
-          <div className="shipping">
-            <h4>shipping</h4>
-            <form>
-              <div className="inputBox">
-                <label htmlFor="">full name</label>
-                <input type="text" placeholder="Bruce wayne" />
-              </div>
-              <div className="inputBox">
-                <label htmlFor="">address</label>
-                <input type="text" />
-              </div>
-
-              <div className="inputBox">
-                <label htmlFor="">full name</label>
-                <input type="text" placeholder="Bruce wayne" />
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
     </section>
   );
 }
 
-export default Cart
+export default Cart;

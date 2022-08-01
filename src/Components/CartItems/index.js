@@ -8,13 +8,13 @@ const CartItems = () => {
   return (
     <div className="cart-items">
       {cart.map((item) => {
-        const { id, price, img, name, amount } = item;
+        const { id, price, small, name, amount } = item;
         return (
           <div key={id}>
             <div className="cart-box">
               <div className="flex-cart">
                 <div className="image">
-                  <img src={img} alt={name} />
+                  <img src={small} alt={name} />
                 </div>
                 <div className="cart-text">
                   <h4>{name}</h4>

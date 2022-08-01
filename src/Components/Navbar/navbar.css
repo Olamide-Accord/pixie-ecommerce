@@ -1,5 +1,5 @@
 nav{
-  padding: 2rem 7%;
+  padding: 1.7rem 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,12 +8,13 @@ nav{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 1000;
   background-color: var(--white);
+  width: 100vw;
 }
 
 .navbar a{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin: 0 1.4rem;
 }
 .navbar a:hover, .navbar a.active{
@@ -22,10 +23,10 @@ nav{
 
 .nav-icons{
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .nav-icons .icon{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--black);
 }
 .nav-icons .icon:hover{
@@ -52,7 +53,7 @@ nav{
 .cart-value p{
   color: var(--white);
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 /* Menu */
 .menu{
