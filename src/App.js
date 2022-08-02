@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import "swiper/css/bundle";
 import About from './Pages/About';
 import Account from "./Pages/Account"
 import Contact from "./Pages/Contact";
