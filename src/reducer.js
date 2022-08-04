@@ -9,6 +9,12 @@ const reducer = (state, action) => {
       ...state, 
       cart: newCart}
   }
+
+  if(action.type === "FILTER_CATEGORY") {
+    let newRegion = state.cart.filter((cartItem) => cartItem.categories === action.payload
+    )
+    return {...state, cart: newRegion}
+  }
     
   if(action.type === "TOGGLE_AMOUNT") {
     let tempCart = state.cart.map((cartItem) => {
@@ -26,8 +32,9 @@ const reducer = (state, action) => {
   }
 
   if(action.type === "ADD_CART"){
-    let tempCart = state.featuredItems.map((cartItem) => {
+    let tempCart = state.cart.map((cartItem) => {
       if(cartItem.id === action.payload.id) {
+        console.log(cartItem);
         return {...cartItem,}
       }
     })

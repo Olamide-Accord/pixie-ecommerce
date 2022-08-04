@@ -35,6 +35,7 @@ a{
 h2 {
   font-size: 2.3rem;
   font-weight: 600;
+  
 }
 button{
   letter-spacing: 0.15rem;
@@ -84,7 +85,7 @@ button{
   box-shadow: 0 0 0.25rem var(--shadow);
   padding: 1.5rem;
 } 
-.box-container .box img{
+.box-container img{
   width: 100%;
 }
 .box-container .box .box-text {
@@ -104,6 +105,6 @@ span{
 }
 @media (max-width: 750px) {
   html{
-    font-size: 42%;
+    font-size: 45%;
   }
 }

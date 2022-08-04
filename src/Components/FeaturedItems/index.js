@@ -5,7 +5,7 @@ import "./featured-items.css"
 import { useGlobalContext } from '../../context';
 
 const FeaturedItems = () => {
-  const {cart} = useGlobalContext()
+  const {cart, filterCategory} = useGlobalContext()
   return (
     <div className="featured-items">
       <div className="featured-header">
@@ -14,23 +14,14 @@ const FeaturedItems = () => {
           <h2>featured items</h2>
         </div>
         <div className="featured-links">
-          <li>
-            <a href="#">all products</a>
-          </li>
-          <li>
-            <a href="#">newest</a>
-          </li>
-          <li>
-            <a href="#">low price</a>
-          </li>
-          <li>
-            <a href="#">high price</a>
-          </li>
+            <button>all products</button>
+            <button onClick={() => filterCategory("Clothes")}>Clothes</button>
+            <button onClick={() => filterCategory("Accessories")}>Accessories</button>
         </div>
       </div>
       <div className='box-container'>
         {cart.map((item) => {
-          const { id, small, name, price } = item;
+          const { id, small, name, price, categories} = item;
           return (
             <div className="box" key={id}>
               <div className="image">
@@ -39,6 +30,7 @@ const FeaturedItems = () => {
               <div className="box-text">
                 <h5>{name}</h5>
                 <h6>${price.toFixed(2)}</h6>
+                <p className="categories">{categories}</p>
               </div>
             </div>
           );

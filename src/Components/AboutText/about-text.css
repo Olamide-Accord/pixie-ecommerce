@@ -1,21 +1,26 @@
 .about-text .box-container{
-  margin: 3rem 0;
-}
+  margin: 0.2rem 0;
 
+}
+.about-text .box-container .image{
+  flex: 1 1 23rem;
+}
+.about-text .box-container .about-box{
+  flex: 1 1 40rem;
+}
 .about-box{
   margin-left: 1rem;
 }
 .about-box h4{
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 .about-box p{
   font-size: 1.5rem;
-  margin-bottom: 1.7rem;
-  line-height: 2.5rem;
+  margin-bottom: 1.3rem;
+  line-height: 2.4rem;
 }
-
 .about-flex{
   display: flex;
   align-items: flex-start;
@@ -24,4 +29,10 @@
 .about-icons{
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 1205px) {
+  .about-text .box-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -27,4 +27,4 @@ const SingleProduct = () => {
   )
 }
 
-export default SingleProduct
+export default SingleProduct;

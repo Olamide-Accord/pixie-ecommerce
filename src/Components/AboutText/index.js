@@ -29,20 +29,15 @@ const AboutText = () => {
             Donec fermentum tincidunt tellus quis fermentum. Proin eget
             imperdiet purus. Nulla facilisi. Aliquam tincidunt porttitor dui sed
             euismod. Duis est libero, rhoncus fermentum turpis id, tempus
-            fringilla ipsum. Nullam venenatis tincidunt neque vel hendrerit.
-            Suspendisse porta pretium porttitor.
+            fringilla ipsum.
           </p>
           <p>
             Sed purus quam, ultricies eu leo in, sollicitudin varius quam. Proin
             dictum urna ac diam fermentum tempus. Pellentesque urna urna,
-            ullamcorper a tincidunt dignissim, venenatis in nisi. Vivamus in
-            volutpat tellus. Etiam fermentum luctus posuere.
+            ullamcorper a tincidunt dignissim, venenatis in nisi.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
-            reiciendis porro aspernatur, quod pariatur id nisi, quasi neque
-            iusto deleniti adipisci. Saepe ratione tempore at. Nihil id facere
-            odio a!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, suscipit. Sed mollitia ab eos officia tenetur tempore totam earum, repellat magni hic, enim harum. Itaque repudiandae cum sint ea sit!
           </p>
           <div className="about-flex">
             <p>Find us at:</p>

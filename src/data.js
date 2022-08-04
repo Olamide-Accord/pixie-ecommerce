@@ -20,7 +20,8 @@ export const data = [
     name: "proin vel ligula",
     price: 15.00,
     amount: 1,
-    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    categories: "Clothes"
   },
   {
     id: 2,
@@ -29,7 +30,8 @@ export const data = [
     name: "erat odio rhoncus",
     price: 25.29,
     amount: 1,
-    desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    categories: "Clothes"
   },
   {
     id: 3,
@@ -38,7 +40,8 @@ export const data = [
     name: "integer vel ltupis",
     price: 35.00,
     amount: 1,
-    desc: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+    desc: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    categories: "Clothes"
   },
   {
     id: 4,
@@ -47,7 +50,8 @@ export const data = [
     name: "sed purus quam",
     price: 45.59,
     amount: 1,
-    desc: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+    desc: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+    categories: "Accessories"
   },
   {
     id: 5,
@@ -56,7 +60,8 @@ export const data = [
     name: "mobi aliquet",
     price: 55.99,
     amount: 1,
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    categories: "Accessories"
   },
   {
     id: 6,
@@ -65,7 +70,8 @@ export const data = [
     name: "urna ac diam",
     price: 65.49,
     amount: 1,
-    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    categories: "Accessories"
   },
   {
     id: 7,
@@ -74,7 +80,8 @@ export const data = [
     name: "mobi aliquet",
     price: 75.99,
     amount: 1,
-    desc: "Pulvinar sapien et ligula ullamcorper. Id leo in vitae turpis massa sed elementum. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Mi quis hendrerit dolor magna eget. Nibh cras pulvinar mattis nunc."
+    desc: "Pulvinar sapien et ligula ullamcorper. Id leo in vitae turpis massa sed elementum. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Mi quis hendrerit dolor magna eget. Nibh cras pulvinar mattis nunc.",
+    categories: "Clothes"
   },
   {
     id: 8,
@@ -83,7 +90,8 @@ export const data = [
     name: "proin vel ligula",
     price: 85.89,
     amount: 1,
-    desc: "Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Donec ac odio tempor orci dapibus. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu."
+    desc: "Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Donec ac odio tempor orci dapibus. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu.",
+    categories: "Clothes"
   },
   {
     id: 9,
@@ -92,7 +100,8 @@ export const data = [
     name: "proin vel ligula",
     price: 95.89,
     amount: 1,
-    desc: "Diam sollicitudin tempor id eu nisl nunc mi. Id ornare arcu odio ut sem nulla pharetra. Iaculis nunc sed augue lacus. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Consequat mauris nunc congue nisi vitae."
+    desc: "Diam sollicitudin tempor id eu nisl nunc mi. Id ornare arcu odio ut sem nulla pharetra. Iaculis nunc sed augue lacus. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Consequat mauris nunc congue nisi vitae.",
+    categories: "Clothes"
   },
 ]
 

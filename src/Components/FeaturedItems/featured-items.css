@@ -8,11 +8,14 @@
   align-items: center;
   gap: 2rem;
 }
-
-.featured-header .featured-links li a{
-  font-size: 1.5rem;
+.featured-header .featured-links button{
+  font-size: 1.7rem;
   font-weight: bold;
   text-transform: capitalize;
+  background: transparent;
+}
+.featured-header .featured-links button:hover{
+  color: var(--blue);
 }
 .featured-items .box-container{
   flex-wrap: wrap;
@@ -23,4 +26,8 @@
 }
 .featured-items .box-container .box:hover{
   cursor: pointer;
+}
+.featured-items .box-container .box p.categories{
+  font-size: 1.7rem;
+  margin-top: 0.7rem;
 }

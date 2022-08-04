@@ -17,6 +17,12 @@ const AppProvider = ({children}) => {
     dispatch({type: "CLEAR_CART"})
   }
 
+
+  const filterCategory = (category) => {
+    dispatch({type: "FILTER_CATEGORY", payload: category})
+  }
+
+
   const removeItem = (id) => {
     dispatch({type: "REMOVE_ITEM", payload: id})
   }
@@ -36,8 +42,8 @@ const AppProvider = ({children}) => {
   }
 
   useEffect(() => {
-    dispatch({type: 'GET_TOTAL'})
-  }, [state.cart])
+    dispatch({type: 'GET_TOTAL'});
+  }, [state.cart]);
 
   return (
     <AppContext.Provider value={{
@@ -47,7 +53,8 @@ const AppProvider = ({children}) => {
       clearCart,
       removeItem, 
       toggleAmount,
-      addCart
+      addCart,
+      filterCategory
     }}>
       {children}
     </AppContext.Provider>
