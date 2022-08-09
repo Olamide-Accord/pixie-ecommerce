@@ -13,35 +13,33 @@ const Carousel = () => {
   return (
     <Swiper
       slidesPerView={3}
-      spaceBetween={30}
+      spaceBetween={40}
       slidesPerGroup={3}
       loop={true}
-      loopFillGroupWithBlank={false}
+      loopFillGroupWithBlank={true}
       pagination={{
         clickable: true,
       }}
       navigation={true}
       modules={[Pagination, Navigation]}
-      className="box-container"
+      className="carousel-container"
   >
     {
       cart.map((item, index) => {
         const  {id, small, name, price} = item;
         return (
-          <div className="style">
-            <SwiperSlide className='box' key={index}>
-            <div className="image">
-              <img src={small} alt={name} />
-            </div>
-            <div className="box-text">
-              <h5>{name}</h5>
-              <h6>${price}</h6>
-              <Link className='add-btn' to={`/${id}`}>
-              details</Link>
-              <Link to="/cart" className="add-btn" onClick={() => addCart(id)}>add to cart</Link>
-            </div>
-          </SwiperSlide>
+          <SwiperSlide className='carousel-box' key={index}>
+          <div className="image">
+            <img src={small} alt={name} />
           </div>
+          <div className="box-text">
+            <h5>{name}</h5>
+            <h6>${price.toFixed(2)}</h6>
+            <Link className='add-btn' to={`/${index}`}>
+            details</Link>
+            <Link to="/cart" className="add-btn" onClick={() => addCart(id)}>add to cart</Link>
+          </div>
+        </SwiperSlide>
         )
       })
     }

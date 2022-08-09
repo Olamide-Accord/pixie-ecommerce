@@ -1,23 +1,20 @@
+
+
 const reducer = (state, action) => {
   if(action.type === "CLEAR_CART") {
-    return {...state, cart: []}
+    return {...state, shoppingCart: []}
   }
 
   if(action.type === "REMOVE_ITEM") {
-    const newCart = state.cart.filter((item) => item.id !== action.payload);
+    const newCart = state.shoppingCart.filter((item) => item.id !== action.payload);
     return {
       ...state, 
-      cart: newCart}
+      shoppingCart: newCart}
   }
 
-  if(action.type === "FILTER_CATEGORY") {
-    let newRegion = state.cart.filter((cartItem) => cartItem.categories === action.payload
-    )
-    return {...state, cart: newRegion}
-  }
     
   if(action.type === "TOGGLE_AMOUNT") {
-    let tempCart = state.cart.map((cartItem) => {
+    let tempCart = state.shoppingCart.map((cartItem) => {
       if(cartItem.id === action.payload.id) {
         if(action.payload.type === "inc") {
           return { ...cartItem, amount: cartItem.amount + 1 };
@@ -28,22 +25,16 @@ const reducer = (state, action) => {
       }
       return cartItem;
     }).filter((cartItem) => cartItem.amount !== 0)
-    return {...state, cart: tempCart}
+    return {...state, shoppingCart: tempCart}
   }
 
   if(action.type === "ADD_CART"){
-    let tempCart = state.cart.map((cartItem) => {
-      if(cartItem.id === action.payload.id) {
-        console.log(cartItem);
-        return {...cartItem,}
-      }
-    })
-    console.log(tempCart);
-    return {...state, tempCart}
+    let newCart = state.cart.filter((item) => item.id === action.payload);
+    return{...state, shoppingCart: newCart}
   }
 
   if(action.type === 'GET_TOTAL') {
-    let {total, amount} = state.cart.reduce((cartTotal, cartItem) => {
+    let {total, amount} = state.shoppingCart.reduce((cartTotal, cartItem) => {
       const {price, amount} = cartItem;
       const itemTotal = price * amount;
       cartTotal.total += itemTotal;

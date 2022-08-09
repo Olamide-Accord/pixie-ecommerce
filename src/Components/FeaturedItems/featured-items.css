@@ -31,3 +31,9 @@
   font-size: 1.7rem;
   margin-top: 0.7rem;
 }
+
+.featured-items .flex-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

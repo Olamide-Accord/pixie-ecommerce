@@ -19,3 +19,35 @@ section.cart{
   width: 100%;
 }
 
+.cart .empty-cart{
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: max-content;
+}
+.cart .empty-cart-div{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.cart .empty-cart .icon {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+.cart .empty-cart h4 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+}
+.cart .empty-cart p{
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+}

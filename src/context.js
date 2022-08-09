@@ -1,11 +1,14 @@
 import React, { createContext, useContext, useState, useReducer, useEffect } from "react";
-import {data} from "./data"
+import { data} from "./data"
 import reducer from "./reducer"
 
 const AppContext = createContext();
 
+const url = "https://fakestoreapi.com/products"
+
 const initialState = {
   cart: data,
+  shoppingCart: [],
   total: 0,
   amount: 0
 }
@@ -17,11 +20,12 @@ const AppProvider = ({children}) => {
     dispatch({type: "CLEAR_CART"})
   }
 
+  const [filter, setFilter] = useState(state.cart)
 
   const filterCategory = (category) => {
-    dispatch({type: "FILTER_CATEGORY", payload: category})
+    let newRegion = state.cart.filter((cartItem) => cartItem.categories === category)
+    setFilter(newRegion)
   }
-
 
   const removeItem = (id) => {
     dispatch({type: "REMOVE_ITEM", payload: id})
@@ -43,7 +47,8 @@ const AppProvider = ({children}) => {
 
   useEffect(() => {
     dispatch({type: 'GET_TOTAL'});
-  }, [state.cart]);
+  }, [state.shoppingCart]);
+
 
   return (
     <AppContext.Provider value={{
@@ -54,7 +59,9 @@ const AppProvider = ({children}) => {
       removeItem, 
       toggleAmount,
       addCart,
-      filterCategory
+      filterCategory,
+      setFilter,
+      filter
     }}>
       {children}
     </AppContext.Provider>

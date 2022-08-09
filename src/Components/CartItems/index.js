@@ -4,10 +4,10 @@ import { FaCaretDown, FaCaretUp } from "react-icons/fa/index";
 import { useGlobalContext } from '../../context';
 
 const CartItems = () => {
-  const {cart, total, clearCart, removeItem, toggleAmount} = useGlobalContext()
+  const {cart, total, clearCart, removeItem, toggleAmount, shoppingCart} = useGlobalContext()
   return (
     <div className="cart-items">
-      {cart.map((item) => {
+      {shoppingCart.map((item) => {
         const { id, price, small, name, amount } = item;
         return (
           <div key={id}>
@@ -40,7 +40,7 @@ const CartItems = () => {
       })}
       <div className="total">
         <h4>total:</h4>
-        <p>${total}</p>
+        <p>${total.toFixed(2)}</p>
       </div>
       <div className="option-div">
         <button className="clear-btn" onClick={clearCart}>
