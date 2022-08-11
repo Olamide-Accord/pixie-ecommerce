@@ -1,0 +1,11 @@
+.signup .row{
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.signup h4{
+  color: var(--blue);
+  font-size: 2rem;
+  text-align: center;
+}

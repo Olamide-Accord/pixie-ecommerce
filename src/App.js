@@ -10,11 +10,14 @@ import Products from "./Pages/Products";
 import Subscribe from "./Components/Subscribe"
 import Cart from './Pages/Cart';
 import SingleProduct from './Pages/SingleProduct';
+import TopScoll from './Components/TopScroll';
+import Signup from './Pages/Signup';
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
+        <TopScoll/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +27,7 @@ const App = () => {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/account' element={<Account/>} />
           <Route path='/cart' element={<Cart/>}/>
-
+          <Route path='/sign-up' element={<Signup/>}/>
         </Routes>
         <Subscribe/>
         <Footer />

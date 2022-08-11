@@ -1,0 +1,92 @@
+.account{
+  height: max-content;
+}
+.account .row{
+  display: flex;
+  align-items: center;
+}
+.account .row .account-col{
+  flex: 1 1 35rem;
+  padding: 1rem 4rem;
+}
+.account .row .account-col:first-child{
+  border-right: 2px solid #ececec;
+}
+.account .row .account-col h4{
+  font-size: 2rem;
+  color: var(--blue);
+  text-align: center;
+  font-weight: 700;
+}
+.account .row .account-col form{
+  margin-top: 2rem;
+}
+.account .row .account-col .input-div{
+  margin-bottom: 2.5rem;
+}
+.account .row .account-col .input-div input{
+  border: none;
+  border-bottom: 0.2rem solid #ececec;
+  width: 100%;
+  padding: 1rem 1.3rem;
+}
+.account .row .account-col .input-div input:focus{
+  border-bottom: 0.2rem solid var(--blue);
+}
+.account .row .account-col .input-div input::placeholder{
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+.account .row .account-col .login-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 2.5rem;  
+  font-size: 1.4rem;
+}
+.account .row .account-col .login-flex a{
+  text-transform: none;
+  color: var(--blue);
+  font-weight: 500;
+}
+.account .row .account-col .login-flex a:hover{
+  text-decoration: underline; 
+}
+.remember-me{
+  display: flex;
+  align-items: center;
+}
+.account .row .account-col .btn{
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.35rem;
+  color: var(--white);
+  position: relative;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.account .row .account-col .btn.login-btn{
+  background-color: var(--blue);
+}
+.account .row .account-col .btn span{
+  color: var(--white);
+  position: absolute;
+  top: 0.8rem;
+  left: 1.5rem;
+  font-size: 2rem;
+}
+.account .row .account-col .btn.google-btn{
+  background: #666;
+}
+
+.account .row .account-col p{
+  font-size: 1.5rem;
+  margin: 4rem 0 7.5rem;
+  text-align: center;
+  text-transform: none;
+  line-height: 2.5rem;
+  word-spacing: 0.1rem;
+}
