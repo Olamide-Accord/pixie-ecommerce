@@ -29,7 +29,7 @@ const reducer = (state, action) => {
   }
 
   if(action.type === "ADD_CART"){
-    let newCart = state.cart.filter((item) => item.id === action.payload);
+    const newCart = state.cart.filter((item) => item.id === action.payload)
     return{...state, shoppingCart: newCart}
   }
 

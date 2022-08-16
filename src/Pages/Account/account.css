@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
 }
-.account .row .account-col .btn{
+.row .btn{
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -68,17 +68,17 @@
   font-size: 1.5rem;
   text-align: center;
 }
-.account .row .account-col .btn.login-btn{
+.btn.login-btn{
   background-color: var(--blue);
 }
-.account .row .account-col .btn span{
+.row .btn span{
   color: var(--white);
   position: absolute;
   top: 0.8rem;
   left: 1.5rem;
   font-size: 2rem;
 }
-.account .row .account-col .btn.google-btn{
+.row .btn.google-btn{
   background: #666;
 }
 

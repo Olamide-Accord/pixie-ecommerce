@@ -1,5 +1,4 @@
 import React from 'react';
-import { items } from "../../data";
 import {Link} from "react-router-dom"
 import "./featured-items.css"
 import { useGlobalContext } from '../../context';

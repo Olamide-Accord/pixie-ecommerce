@@ -6,7 +6,7 @@ import {GiShoppingCart} from "react-icons/gi"
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
-  const {shoppingCart} = useGlobalContext()
+  const {shoppingCart} = useGlobalContext();
   return (
     <section className="cart">
       <div className="box-container">
@@ -14,8 +14,7 @@ const Cart = () => {
           <h3>Shoppping Cart</h3>
           <div className="shopping-cart">
             {
-              shoppingCart.length === 0 && 
-              <div className='empty-cart'>
+              shoppingCart.length === 0 && <div className='empty-cart'>
                 <div className='empty-cart-div'>
                   <GiShoppingCart className='icon'/>
                 </div>

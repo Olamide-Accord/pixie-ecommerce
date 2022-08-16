@@ -35,8 +35,8 @@ const AppProvider = ({children}) => {
     dispatch({type: "TOGGLE_AMOUNT", payload: {id, type}})
   }
 
-  const addCart = (id) => {
-    dispatch({type: "ADD_CART", payload: id})
+  const addCart = (product) => {
+    dispatch({type: "ADD_CART", payload: product})
   }
 
   const [navbar, setNavbar] = useState(false);
